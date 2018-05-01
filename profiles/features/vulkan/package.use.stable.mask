@@ -4,3 +4,4 @@
 # Marty Plummer <hanetzer at startmail dot com> (1 May 2018)
 # Mask until ::gentoo stabilizes media-libs/vulkan-loader
 games-emulation/retroarch vulkan
+games-emulation/dolphin-libretro vulkan

@@ -9,4 +9,9 @@
     <email>stefan.gert.r@gmail.com</email>
     <description>Primary maintainer</description>
   </maintainer>
+  <use>
+    <flag name='profile_accuracy'>Build with accuracy profile</flag>
+    <flag name='profile_balanced'>Build with balanced profile</flag>
+    <flag name='profile_performance'>Build with performance profile</flag>
+  </use>
 </pkgmetadata>

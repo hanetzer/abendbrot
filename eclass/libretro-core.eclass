@@ -1,6 +1,5 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 # @ECLASS: libretro-core.eclass
 # @MAINTAINER:
@@ -88,7 +87,7 @@ libretro-core_src_prepare() {
 		for makefile in "${S}"/?akefile* "${S}"/target-libretro/?akefile*; do
 			# * Convert CRLF to LF
 			# * Expand *FLAGS to prevent potential self-references
-			# * Where LDFLAGS directly define the link version 
+			# * Where LDFLAGS directly define the link version
 			#   script append LDFLAGS and LIBS
 			# * Where SHARED is used to provide shared linking
 			#   flags ensure final link command includes LDFLAGS

@@ -1,6 +1,5 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 # @ECLASS: libretro.eclass
 # @MAINTAINER:
@@ -51,7 +50,7 @@ fi
 # Workaround for ebuilds needing submodules
 if [[ ${PN} = ppsspp-libretro ]] || [[ ${PN} = psp1-libretro ]]  || [[ ${PN} = citra-libretro ]] && [[ ! ${PV} = 9999 ]]; then
 	inherit git-r3
-	
+
 	SRC_URI=""
 	EGIT_REPO_URI="https://github.com/${LIBRETRO_REPO_NAME}.git"
 	[ ${LIBRETRO_COMMIT_SHA} = die ] && die "LIBRETRO_COMMIT_SHA must be set before inherit."

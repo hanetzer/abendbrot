@@ -1,12 +1,10 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
-
-inherit eutils
+EAPI=6
 
 DESCRIPTION="a simple non-validating css1 and html parser for C++"
-HOMEPAGE="http://sf.net/projects/htmlcxx"
+HOMEPAGE="https://sourceforge.net/projects/htmlcxx/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
 LICENSE="LGPL-2"
@@ -17,7 +15,6 @@ IUSE=""
 RDEPEND=""
 DEPEND="${RDEPEND}"
 
-src_prepare() {
-	epatch "${FILESDIR}"/${P}-ptrdiff_t.patch
-	default_src_prepare
-}
+PATCHES=(
+	"${FILESDIR}"/${PN}-0.85-ptrdiff_t.patch
+)

@@ -7,5 +7,6 @@
   </maintainer>
   <use>
     <flag name='vulkan'>Enable Vulkan renderer</flag>
+    <flag name='software'>Enable software renderer</flag>
   </use>
 </pkgmetadata>

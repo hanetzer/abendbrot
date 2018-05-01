@@ -14,20 +14,21 @@ KEYWORDS="~x86 ~amd64"
 IUSE=""
 
 DEPEND="sys-devel/flex
-media-libs/libpng
-dev-util/byacc
-virtual/pkgconfig"
+	media-libs/libpng
+	dev-util/byacc
+	virtual/pkgconfig
+"
 RDEPEND="media-libs/libpng"
 
 src_prepare() {
-    tc-export CC
-    default
+	tc-export CC
+	default
 }
 
 src_compile() {
-    emake all CFLAGS="${CFLAGS}" PKG_CONFIG="$(tc-getPKG_CONFIG)" WARNFLAGS= STRIP= Q=
+	emake all CFLAGS="${CFLAGS}" PKG_CONFIG="$(tc-getPKG_CONFIG)" WARNFLAGS= STRIP= Q=
 }
 
 src_install() {
-    emake install DESTDIR="${D}" PREFIX="/usr" mandir="/usr/share/man" STRIP= Q=
+	emake install DESTDIR="${D}" PREFIX="/usr" mandir="/usr/share/man" STRIP= Q=
 }

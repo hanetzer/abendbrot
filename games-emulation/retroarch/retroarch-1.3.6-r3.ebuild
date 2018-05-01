@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -90,8 +90,8 @@ DEPEND="${RDEPEND}
 	virtual/pkgconfig
 "
 
-PDEPEND="!vulkan? ( shaders? ( !cg? ( games-emulation/common-shaders:0=[-cg] ) )
-		!vulkan? ( cg? ( games-emulation/common-shaders:0=[cg] ) ) )
+PDEPEND="!vulkan? ( shaders? ( !cg? ( games-emulation/common-shaders:0= ) )
+		!vulkan? ( cg? ( games-emulation/common-shaders:0= ) ) )
 "
 
 pkg_setup() {

@@ -1,0 +1,6 @@
+# Copyright 1999-2018 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License V2
+
+# Marty Plummer <hanetzer at startmail dot com>
+# media-libs/vulkan-loader is keyworded on amd64
+games-emulation/retroarch -vulkan

@@ -1,0 +1,6 @@
+# Copyright 1999-2015 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+# Marty Plummer <hanetzer at startmail dot com> (1 May 2018)
+# Mask until ::gentoo stabilizes media-libs/vulkan-loader
+games-emulation/retroarch vulkan

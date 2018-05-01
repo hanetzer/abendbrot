@@ -54,7 +54,6 @@ REQUIRED_USE="
 	python? ( ${PYTHON_REQUIRED_USE} )
 	sdl2? ( !sdl )
 	videocore? ( arm )
-	vulkan? ( amd64 )
 	wayland? ( egl )
 	xinerama? ( X )
 	xmb? ( assets )
@@ -94,7 +93,7 @@ RDEPEND="
 	udev? ( virtual/udev:0=
 		X? ( x11-drivers/xf86-input-evdev:0= )
 	)
-	amd64? ( vulkan? ( media-libs/vulkan-loader:0= ) )
+	vulkan? ( media-libs/vulkan-loader:0= )
 	v4l2? ( media-libs/libv4l:0= )
 	wayland? ( media-libs/mesa:0=[wayland?] )
 	X? (

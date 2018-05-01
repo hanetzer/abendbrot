@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -91,8 +91,8 @@ DEPEND="${RDEPEND}
 	virtual/pkgconfig
 "
 
-PDEPEND="!vulkan? ( shaders? ( !cg? ( games-emulation/common-shaders:0=[-cg] ) )
-		!vulkan? ( cg? ( games-emulation/common-shaders:0=[cg] ) ) )
+PDEPEND="!vulkan? ( shaders? ( !cg? ( games-emulation/common-shaders:0= ) )
+		!vulkan? ( cg? ( games-emulation/common-shaders:0= ) ) )
 "
 
 pkg_setup() {
@@ -240,7 +240,7 @@ src_install() {
 	doins "${S}"/gfx/video_filters/*.so
 	doins "${S}"/gfx/video_filters/*.filt
 
-	# Install audio filters. 
+	# Install audio filters.
 	insinto ${RETROARCH_LIB_DIR}/filters/audio/
 	#doins "${S}"/libretro-common/audio/dsp_filters/*.so
 	doins "${S}"/libretro-common/audio/dsp_filters/*.dsp

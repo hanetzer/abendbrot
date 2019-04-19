@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 # TODO: Rewrite src_prepare() and src_configure()
@@ -80,8 +80,8 @@ RDEPEND="
 	overlays? ( games-emulation/common-overlays:0= )
 	pulseaudio? ( media-sound/pulseaudio:0= )
 	python? ( ${PYTHON_DEPS} )
-	qt5? ( 
-	        dev-qt/qtcore:5 
+	qt5? (
+	        dev-qt/qtcore:5
 	        dev-qt/qtgui:5
 	        dev-qt/qtopengl:5
 	        dev-qt/qtwidgets:5
@@ -120,7 +120,6 @@ pkg_setup() {
 src_prepare() {
 	epatch \
 		"${FILESDIR}/${P}-build.patch" \
-		"${FILESDIR}/${P}-python.patch" \
 		"${FILESDIR}/${P}-custom_fpu.patch"
 
 	# If Python support is enabled, use the currently enabled "python" binary.
